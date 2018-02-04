@@ -1,0 +1,40 @@
+page-add-registro-user {
+        .background{
+            background-image:url("../assets/fondo1.jpg");
+            background-repeat: repeat-x;
+        }
+
+    ion-card.card{
+        box-shadow: none;
+        background: rgba(0,0,0,0.3);
+        border-radius: 5px;
+    }
+    a,p,
+     ion-card-header.card-header{
+        color: #fff;
+        font-weight:bold;   
+    }
+
+    .item{
+        margin-bottom: 10px;
+        background:rgba(255,255,255, 0.3);
+        border:medium none;
+    }
+    .text-input,{
+        color: #fff;
+        font-weight:bold;
+    }
+    input::-moz-placeholder{
+        color: #fff !important;
+    }
+    input:-moz-placeholder{
+    color: #fff !important;
+    }
+    *::-moz-placeholder{
+        color: #fff !important;
+    }
+    *:-moz-placeholder{
+    color: #fff !important;
+    }
+
+}

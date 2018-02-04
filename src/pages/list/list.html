@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lista de Avisos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let titulos of TituloCla;let i=index" >
+<p (click)="verAviso(titulos.idClasificado)"><strong>{{titulos.Titulo}}</strong></p>
+<button item-right  full (click)="EditarLista(titulos.idClasificado)">Editar</button>
+<button item-right>Eliminar</button>
+  </ion-item>
+</ion-list>
+  <ion-fab>
+	<button ion-fab secondary menuToggle>Menu</button>
+</ion-fab>
+</ion-content>

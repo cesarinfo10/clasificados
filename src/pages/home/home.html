@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Mi Perfil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Bienvenido: {{nomUsuario}}</h3>
+
+  <p>
+<ion-card class="card card-ios">
+    <ion-card-content class="card-content card-content-ios">
+      <img src="http://localhost/clasificados/images/fotoUsuario/{{fotoUsuario}}">
+    </ion-card-content>
+
+  <ion-list>
+    <button ion-item [navPush]="listaPage">
+      <ion-icon name="md-clipboard" item-start></ion-icon>
+      Ver Mis Avisos
+    </button>
+    <button ion-item>
+      <ion-icon name="ios-contact" item-start></ion-icon>
+      Datos Personales
+    </button>
+    <button ion-item>
+      <ion-icon name="md-mail" item-start></ion-icon>
+      Ver Mis Mensajes
+    </button>
+  </ion-list>
+</ion-card>
+  </p>
+
+</ion-content>
